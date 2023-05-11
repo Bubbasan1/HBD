@@ -1,0 +1,79 @@
+DELAY 2000
+GUI r
+DELAY 2000
+STRING powershell
+DELAY 250
+ENTER
+DELAY 2000
+STRING # Happy Birthday song with Beep tones in Powershell Script
+ENTER
+STRING cls
+ENTER
+STRING $BeepList = @(
+ENTER
+STRING @{ Pitch = 1059.274; Length = 300; };
+ENTER
+STRING @{ Pitch = 1059.274; Length = 200; };
+ENTER
+STRING @{ Pitch = 1188.995; Length = 500; };
+ENTER
+ENTER
+STRING @{ Pitch = 1059.274; Length = 500; };
+ENTER
+STRING @{ Pitch = 1413.961; Length = 500; };
+ENTER
+STRING @{ Pitch = 1334.601; Length = 950; };
+ENTER
+STRING @{ Pitch = 1059.274; Length = 300; };
+ENTER
+STRING @{ Pitch = 1059.274; Length = 200; };
+ENTER
+STRING @{ Pitch = 1188.995; Length = 500; };
+ENTER
+ENTER
+STRING @{ Pitch = 1059.274; Length = 500; };
+ENTER
+STRING @{ Pitch = 1587.117; Length = 500; };
+ENTER
+STRING @{ Pitch = 1413.961; Length = 950; };
+ENTER
+STRING @{ Pitch = 1059.274; Length = 300; };
+ENTER
+STRING @{ Pitch = 1059.274; Length = 200; };
+ENTER
+STRING @{ Pitch = 2118.547; Length = 500; };
+ENTER
+STRING @{ Pitch = 1781.479; Length = 500; };
+ENTER
+STRING @{ Pitch = 1413.961; Length = 500; };
+ENTER
+STRING @{ Pitch = 1334.601; Length = 500; };
+ENTER
+STRING @{ Pitch = 1188.995; Length = 500; };
+ENTER
+STRING @{ Pitch = 1887.411; Length = 300; };
+ENTER
+STRING @{ Pitch = 1887.411; Length = 200; };
+ENTER
+STRING @{ Pitch = 1781.479; Length = 500; };
+ENTER
+STRING @{ Pitch = 1413.961; Length = 500; };
+ENTER
+STRING @{ Pitch = 1587.117; Length = 500; };
+ENTER
+STRING @{ Pitch = 1413.961; Length = 900; };
+ENTER
+STRING );
+ENTER
+STRING For ($i=1; $i -le 2; $i++) {
+ENTER
+STRING foreach ($Beep in $BeepList) {
+ENTER
+STRING [System.Console]::Beep($Beep['Pitch'], $Beep['Length']);
+ENTER
+STRING }
+ENTER
+STRING }
+ENTER
+STRING exit
+ENTER
